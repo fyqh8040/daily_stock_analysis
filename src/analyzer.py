@@ -24,7 +24,7 @@ from src.agent.llm_adapter import get_thinking_extra_body
 from src.config import Config, get_config
 
 logger = logging.getLogger(__name__)
-
+litellm.drop_params = True
 
 # 股票名称映射（常见股票）
 STOCK_NAME_MAP = {
